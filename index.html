@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <script src="https://kit.fontawesome.com/e3dd964d46.js" crossorigin="anonymous"></script>
+
+    <!-- SCRIPTS -->
+    <script src="./src/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header__container">
+      <div class="header__content">
+        <h1 class="header__title">MY TASKS</h1>
+      </div>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main class="main__container">
+      <!-- Formulário para adicionar nova task -->
+      <form class="form__container">
+        <h2 class="form__titletitle2">Inserir tarefa</h2>
+        <div class="form__input-container">
+          <input
+            id="input_title"
+            class="form__input--text input__box"
+            type="text"
+            placeholder="Digitar titulo da tarefa"
+          />
+          <select class="form__input--priority input__box">
+            <option value="">Selecionar tipo</option>
+            <option value="Urgente">Urgente</option>
+            <option value="Importante">Importante</option>
+            <option value="Normal">Normal</option>
+          </select>
+        </div>
+        <button class="form__button--add-task">
+          Adicionar Tarefa na Lista
+        </button>
+      </form>
+
+      <!-- Listagem de tasks -->
+      <section class="tasks__container">
+        <h2>Tarefas</h2>
+        <ul class="tasks__list">
+          <!-- Task Exemplo 1 -->
+          <!-- <li class="task__item">
+            <div class="task-info__container">
+              <span class="task-type span-urgent"></span>
+              <p>Comprar comida para o gato</p>
+            </div>
+            <button class="task__button--remove-task" ><i class="fa-solid fa-trash"></i></button>
+          </li> -->
+          <!-- Task Exemplo 2 -->
+          <!-- <li class="task__item">
+            <div class="task-info__container">
+              <span class="task-type span-important"></span>
+              <p>Consertar Computador</p>
+            </div>
+            <button class="task__button--remove-task"><i class="fa-solid fa-trash"></i></button>
+          </li> -->
+          <!-- Task Exemplo 3 -->
+          <!-- <li class="task__item">
+            <div class="task-info__container">
+              <span class="task-type span-normal"></span>
+              <p>Beber água</p>
+            </div>
+              <button class="task__button--remove-task"><i class="fa-solid fa-trash"></i></button>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

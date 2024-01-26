@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*body{
+   background-color: #e2e2e2;
+}
+.header__container{
+   margin: 0 auto;
+   padding: 2rem 12rem;
+}
+.header__content{
+   display: flex;
+   justify-content: space-between;
+}
+.header__title{
+   font-family: 'Roboto', sans-serif;
+   color: #3b5bdb;
+   font-size: 2rem;
+}
+.header__input--searchinput__box{
+   background-color: #ebebeb;
+   width: 30rem;
+   border: none;
+   border-radius: 5px;
+   line-height: 2rem;
+}
+.input__box{
+   padding: 0 10px;
+}
+.main__container{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 2rem 12rem;
+   background-color: #e2e2e2;
+   font-family: 'Roboto', sans-serif;
+   gap: 1rem;
+   
+}
+.form__container, .tasks__container{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   background-color: #ffff;
+   padding: 2rem;
+   border-radius: 10px;
+}
+.form__title{
+   line-height: 2rem;
+}
+.form__input-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.form__input--text, .form__input--priority{
+   width: 38%;
+   background-color: #ebebeb;
+   line-height: 2rem;
+   border: none;
+   border-radius: 5px;
+   margin-block: 0.5rem;
+   gap: 1rem
+}
+#input_title{
+   width: 55%;
+}
+.form__button--add-task{
+   background-color: #3b5bdb;
+   line-height: 2rem;
+   border: none;
+   border-radius: 5px;
+   color: white;
+}
+.tasks__list{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+.task__item{
+   display: flex;
+   justify-content: space-between;
+   background-color: #e2e2e2;
+   line-height: 1.5rem;
+   height: 400;
+   padding: 5px;
+   border-radius: 5px;
+}
+.task__button--remove-task{
+   background-color: #e2e2e2;
+   border: none;
+}
+.task-info__container{
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+}
+.task-type{
+   width: 2px;
+   height: 2px;
+   content: "";
+   border-radius: 50%;
+   padding: 0.25rem;
+   margin: auto;
+}
+.span-normal{
+   background-color: #028302;
+}
+.span-important{
+   background-color: #f3a703;
+}
+.span-urgent{
+   background-color: red;
+}
